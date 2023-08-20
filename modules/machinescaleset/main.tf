@@ -13,7 +13,7 @@ resource "azurerm_windows_virtual_machine_scale_set" "vmss" {
     enable_accelerated_networking = true
     network_security_group_id     = var.networksecuritygroup_id
     ip_configuration {
-      name                                   = "ku-configuration"
+      name                                   = "net-configuration"
       primary                                = true
       subnet_id                              = var.azurerm_subnet_ids
       load_balancer_backend_address_pool_ids = [var.loads]
