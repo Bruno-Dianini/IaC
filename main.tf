@@ -1,9 +1,4 @@
 
-provider "azurerm" {
-  features {
-
-  }
-}
 
 module "locals" {
   source   = "./modules/locals"
